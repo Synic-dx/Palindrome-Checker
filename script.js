@@ -7,7 +7,7 @@ $(document).ready(function() {
     });
 
     $("#checkButton").click(function() {
-        var userInput = $("#text").val();
+        var userInput = $("#text").val().toLowerCase();
         var alphaPattern = /^[a-zA-Z\s]+$/;
 
         if(alphaPattern.test(userInput)) {
